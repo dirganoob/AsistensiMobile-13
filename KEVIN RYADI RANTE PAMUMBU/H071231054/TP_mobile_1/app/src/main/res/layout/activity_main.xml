@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#a9a9a9"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tex1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KEVIN RYADI RANTE PAMUMBIU"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.597"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.126"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kvnryadi . Man"
+        tools:layout_editor_absoluteX="123dp"
+        tools:layout_editor_absoluteY="123dp"
+        android:textColor="#000000"/>
+
+    <ImageView
+        android:id="@+id/imageprofil"
+        android:layout_width="78dp"
+        android:layout_height="91dp"
+        android:src="@drawable/profile"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="69dp" />
+
+
+    <LinearLayout
+        android:id="@+id/syntaxWar"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:padding="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageprofil"
+        android:background="@drawable/rounded_bg">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="33dp"
+            android:src="@drawable/dynamite"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:text="SyntaxError"
+            android:textSize="18dp"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Berusaha dalam hidup"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="262dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasanuddin university"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="337dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Makassar"
+        tools:layout_editor_absoluteX="253dp"
+        tools:layout_editor_absoluteY="337dp"
+        android:textColor="#000000"/>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="26 followers"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="384dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="21 following"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="384dp"
+        android:textColor="#000000"/>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="following"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="185dp"
+        tools:layout_editor_absoluteY="452dp" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kvnryadi/"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="513dp" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="README.md"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="513dp" />
+
+    <ImageView
+        android:layout_width="114dp"
+        android:layout_height="26dp"
+        android:src="@drawable/back"
+        tools:layout_editor_absoluteX="-35dp"
+        tools:layout_editor_absoluteY="7dp" />
+
+    <ImageView
+        android:layout_width="114dp"
+        android:layout_height="26dp"
+        android:src="@drawable/share"
+        tools:layout_editor_absoluteX="281dp"
+        tools:layout_editor_absoluteY="7dp" />
+
+    <ImageView
+        android:layout_width="114dp"
+        android:layout_height="26dp"
+        android:src="@drawable/more"
+        tools:layout_editor_absoluteX="328dp"
+        tools:layout_editor_absoluteY="7dp" />
+
+
+
+
+
+    <ImageView
+        android:layout_width="99dp"
+        android:layout_height="20dp"
+        android:src="@drawable/skyline"
+        tools:layout_editor_absoluteX="-18dp"
+        tools:layout_editor_absoluteY="337dp" />
+
+    <ImageView
+        android:layout_width="99dp"
+        android:layout_height="20dp"
+        android:src="@drawable/user"
+        tools:layout_editor_absoluteX="-18dp"
+        tools:layout_editor_absoluteY="384dp" />
+
+    <ImageView
+        android:layout_width="99dp"
+        android:layout_height="20dp"
+        android:src="@drawable/location"
+        tools:layout_editor_absoluteX="185dp"
+        tools:layout_editor_absoluteY="337dp" />
+
+    <ImageView
+        android:layout_width="99dp"
+        android:layout_height="20dp"
+        android:src="@drawable/period"
+        tools:layout_editor_absoluteX="107dp"
+        tools:layout_editor_absoluteY="383dp" />
+
+    <ImageView
+        android:layout_width="99dp"
+        android:layout_height="20dp"
+        android:src="@drawable/throphy"
+        tools:layout_editor_absoluteX="-18dp"
+        tools:layout_editor_absoluteY="420dp" />
+
+    <ImageView
+        android:layout_width="99dp"
+        android:layout_height="20dp"
+        android:src="@drawable/hacker"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="420dp" />
+
+    <ImageView
+        android:layout_width="99dp"
+        android:layout_height="20dp"
+        android:src="@drawable/man"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="420dp" />
+
+    <ImageView
+        android:layout_width="99dp"
+        android:layout_height="20dp"
+        android:src="@drawable/gamer"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="420dp" />
+
+    <ImageView
+        android:layout_width="99dp"
+        android:layout_height="20dp"
+        android:src="@drawable/correct"
+        tools:layout_editor_absoluteX="123dp"
+        tools:layout_editor_absoluteY="452dp" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:src="@drawable/pemandangan"
+        tools:layout_editor_absoluteX="107dp"
+        tools:layout_editor_absoluteY="535dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:src="@drawable/linkedin"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="635dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:src="@drawable/instagram"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="635dp" />
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:src="@drawable/profile_viewa"
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="685dp" />
+
+    <View
+        android:id="@+id/linearLayout2"
+        android:layout_width="537dp"
+        android:layout_height="15dp"
+        android:background="#d3d3d3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.678" />
+    
+
+</androidx.constraintlayout.widget.ConstraintLayout>
