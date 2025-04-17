@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121a25"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Header -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pengaturan"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/doneText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SELESAI"
+            android:textColor="#00AEEF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <!-- Akun -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Akun"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp"
+        android:layout_marginTop="40dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/border_box"
+        android:paddingVertical="4dp">
+
+        <TextView style="@style/SettingItem" android:textSize="24sp" android:text="Preferensi" />
+        <View style="@style/DividerLine" />
+        <TextView android:id="@+id/editProfil" style="@style/SettingItem" android:textSize="24sp" android:text="Profil" />
+        <View style="@style/DividerLine" />
+        <TextView style="@style/SettingItem" android:textSize="24sp" android:text="Notifikasi" />
+        <View style="@style/DividerLine" />
+        <TextView style="@style/SettingItem" android:textSize="24sp" android:text="Kursus" />
+        <View style="@style/DividerLine" />
+        <TextView style="@style/SettingItem" android:textSize="24sp" android:text="Duolingo for Schools" />
+        <View style="@style/DividerLine" />
+        <TextView style="@style/SettingItem" android:textSize="24sp" android:text="Pengaturan privasi" />
+        <View style="@style/DividerLine" />
+    </LinearLayout>
+
+    <!-- Spasi -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <!-- Dukungan -->
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dukungan"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/border_box"
+        android:paddingVertical="4dp">
+
+        <TextView style="@style/SettingItem" android:textSize="24sp" android:text="Pusat Bantuan" />
+        <View style="@style/DividerLine" />
+        <TextView style="@style/SettingItem" android:textSize="24sp" android:text="Saran" />
+    </LinearLayout>
+
+    <!-- Spacer fleksibel -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Tombol keluar -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KELUAR"
+        android:backgroundTint="#1e2a3a"
+        android:textColor="#00AEEF"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="40dp"/>
+
+    <!-- Ketentuan -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KETENTUAN"
+        android:textColor="#00AEEF"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="12dp" />
+</LinearLayout>
