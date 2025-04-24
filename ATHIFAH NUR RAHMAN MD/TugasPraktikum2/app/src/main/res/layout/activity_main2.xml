@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <!-- Header dengan tombol Cancel dan Save -->
+
+    <!--Header-->
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:weightSum="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01">
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:text="Cancel"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Edit profile"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/save"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="Save"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/editHeader"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/headertwit"
+        android:contentDescription="Profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        android:clickable="true"
+        android:focusable="true"/>
+    <!-- Foto Profil -->
+    <FrameLayout
+        android:id="@+id/lingkaranprofile"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:background="@drawable/lingkaran"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editHeader"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="-35dp">
+
+        <FrameLayout
+            android:id="@+id/frameprofile"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:background="@drawable/lingkaran"
+            android:padding="4dp">
+            <ImageView
+                android:id="@+id/editProfile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/lingkaran"
+                android:clipToOutline="true"
+                android:contentDescription="profile"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profiletwit"
+                android:clickable="true"
+                android:focusable="true"/>
+
+        </FrameLayout>
+        <ImageView
+            android:id="@+id/iconKamera"
+            android:layout_width="69dp"
+            android:layout_height="67dp"
+            android:layout_gravity="center"
+            android:background="@drawable/lingkaran"
+            android:clipToOutline="true"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_kamera"
+            android:alpha="0.3" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lingkaranprofile">
+
+        <!-- Edit Profile -->
+        <LinearLayout
+            android:id="@+id/layoutEditItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp">
+
+            <LinearLayout
+                android:id="@+id/nameProfileEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="1dp">
+
+                <TextView
+                    android:id="@+id/nameEdit"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:text="Name"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/inputName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="keknya gaginideh"
+                    android:minHeight="48dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                android:background="#D3D3D3" />
+            <!--Bio-->
+            <LinearLayout
+                android:id="@+id/bioProfileEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="1dp">
+
+                <TextView
+                    android:id="@+id/bioEdit"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:text="Bio"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/inputBio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="Add bio to your profile"
+                    android:minHeight="48dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="25dp"
+                android:background="#D3D3D3" />
+
+            <!--Lokasi-->
+            <LinearLayout
+                android:id="@+id/LokasiProfileEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="1dp">
+
+                <TextView
+                    android:id="@+id/locationEdit"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:text="Location"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/inputLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="ini juga harus dari activity1 datanya"
+                    android:minHeight="48dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                android:background="#D3D3D3" />
+
+            <!--Website-->
+            <LinearLayout
+                android:id="@+id/websiteProfileEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="1dp">
+
+                <TextView
+                    android:id="@+id/websiteEdit"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:text="Website"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/websiteInput"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="Add your Website"
+                    android:minHeight="48dp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                android:background="#D3D3D3" />
+
+            <!--Birth Date-->
+            <LinearLayout
+                android:id="@+id/birtDateProfileEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="1dp">
+
+                <TextView
+                    android:id="@+id/birthDateEdit"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:text="Birth Date"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/inputBirthDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="ini data dari act1 wrna biru"
+                    android:minHeight="48dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                android:background="#D3D3D3" />
+
+            <!--Switch To Professional-->
+            <LinearLayout
+                android:id="@+id/switchProfileEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="1dp">
+
+                <TextView
+                    android:id="@+id/switchto"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:text="Switch to Professional"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/icon_more" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                android:background="#D3D3D3" />
+
+            <!--Edit Expanded Bio-->
+            <LinearLayout
+                android:id="@+id/editExpandedBio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="1dp">
+
+                <TextView
+                    android:id="@+id/expandedBio"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:text="Edit Expanded Bio"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/icon_more" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                android:background="#D3D3D3" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="#D3D3D3" />
+
+            <!--TipsSection-->
+            <LinearLayout
+                android:id="@+id/tipsProfileEditSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="1dp">
+
+                <TextView
+                    android:id="@+id/tipsSection"
+                    android:layout_width="310dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:text="Tips"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:text="Off" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/icon_more" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="#D3D3D3" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
