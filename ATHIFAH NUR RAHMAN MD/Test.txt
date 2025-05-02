@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <!-- NestedScrollView -->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/taskbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Navbar -->
+            <LinearLayout
+                android:id="@+id/navbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <!-- Instagram Logo -->
+                    <LinearLayout
+                        android:id="@+id/instagram"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/instagram_font" />
+                    </LinearLayout>
+
+                    <!-- Notifications and DM -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginEnd="20dp"
+                            android:src="@drawable/ic_heart" />
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="6dp"
+                            android:src="@drawable/ic_dm" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Story Section -->
+            <HorizontalScrollView
+                android:id="@+id/story"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:fillViewport="true"
+                android:padding="10dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="112dp"
+                        android:layout_marginEnd="15dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:contentDescription="Highlight Story"
+                            android:src="@drawable/ic_profilenew" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="Your story"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="112dp"
+                        android:layout_marginEnd="15dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:contentDescription="Highlight Story"
+                            android:src="@drawable/iv_jisung" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="and.y_park"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="112dp"
+                        android:layout_marginEnd="15dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:contentDescription="Highlight Story"
+                            android:src="@drawable/iv_jeno" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="lee_jeno"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="112dp"
+                        android:layout_marginEnd="15dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:contentDescription="Highlight Story"
+                            android:src="@drawable/iv_mark" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="onyourmark"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="112dp"
+                        android:layout_marginEnd="15dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:contentDescription="Highlight Story"
+                            android:src="@drawable/iv_chenle" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="chenleeee"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="112dp"
+                        android:layout_marginEnd="15dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:contentDescription="Highlight Story"
+                            android:src="@drawable/iv_jaemin" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="najaemin"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="112dp"
+                        android:layout_marginEnd="15dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:contentDescription="Highlight Story"
+                            android:src="@drawable/iv_renjun" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="yellow_23"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="112dp"
+                        android:layout_marginEnd="15dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:contentDescription="Highlight Story"
+                            android:src="@drawable/iv_haechan" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="haechanaceah"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!-- RecyclerView -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewFeed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="50dp"
+                android:clipToPadding="false"
+                tools:itemCount="7"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Taskbar -->
+    <LinearLayout
+        android:id="@+id/taskbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@android:color/white"
+        android:elevation="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/ic_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:src="@drawable/ic_home" />
+
+        <ImageView
+            android:id="@+id/ic_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:src="@drawable/ic_search" />
+
+        <ImageView
+            android:id="@+id/ic_post"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:src="@drawable/ic_add_post" />
+
+        <ImageView
+            android:id="@+id/ic_reels"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:src="@drawable/ic_reels" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ic_profile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:contentDescription="Highlight Story"
+            android:src="@drawable/ic_profilenew" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:id="@+id/layoutPostHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_profile"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_profilenew" />
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:text="atipungmo"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="end">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="80dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/white"
+                android:text="Ikuti"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:cornerRadius="8dp"
+                app:strokeColor="@color/black"
+                app:strokeWidth="1dp"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/ic_more" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/imageViewPosts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:contentDescription="grgr"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_profile_post" />
+
+    <LinearLayout
+        android:id="@+id/dots_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:orientation="horizontal" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="8dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageViewSuka"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginRight="2dp"
+                android:src="@drawable/ic_heart" />
+
+            <TextView
+                android:id="@+id/tv_likes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:text="2,3JT"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imageViewComments"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginRight="2dp"
+                android:src="@drawable/ic_comments" />
+
+            <TextView
+                android:id="@+id/tv_comments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:text="1,2rb"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imageViewShares"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginRight="2dp"
+                android:src="@drawable/ic_share" />
+
+            <TextView
+                android:id="@+id/tv_shares"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text="54,9rb"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageViewSave"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_save" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/tv_caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="ceksound.."
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>
+package com.example.instagram03.utils;
+
+import android.util.Log;
+
+import com.example.instagram03.R;
+import com.example.instagram03.models.Post;
+import com.example.instagram03.models.Story;
+import com.example.instagram03.models.User;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+public class DataSource {
+    private static List<User> userList = new ArrayList<>();
+    private static List<Post> feedPostList = new ArrayList<>();
+    private static List<Post> profilePostList = new ArrayList<>();
+    private static List<Story> storyList = new ArrayList<>();
+    private static User currentUser;
+
+    static {
+        try {
+            initUsers();
+            initFeedPosts();
+            initProfilePosts();
+            initStories();
+        } catch (Exception e) {
+            Log.e("DataSource", "Error initializing data: " + e.getMessage());
+        }
+    }
+
+    private static void initUsers() {
+        currentUser = new User(
+                1,
+                "atfhnr_",
+                R.drawable.ic_profilenew,
+                "Athifah",
+                "Gaktauw",
+                742,
+                710,
+                6
+        );
+        userList.add(new User(2, "haechanacheah", R.drawable.iv_haechan, "Lee Haechan", "NCT", 999345, 15, 1));
+        userList.add(new User(3,"onyourmark", R.drawable.iv_mark, "Mark Lee", "The First Fruit",99999,17,1));
+        userList.add(new User(4,"and.y_park",R.drawable.iv_jisung,"Jisung Park","Andy",77777,8,1));
+        userList.add(new User(5,"lee_jeno",R.drawable.iv_jeno,"Lee Jeno","Jeno",757557,8,1));
+        userList.add(new User(6,"chenleeee",R.drawable.iv_chenle,"Zhong Chenle","Stephen Curry Fans",88888,8,1));
+        userList.add(new User(7,"yellow_23",R.drawable.iv_renjun,"Renjun Hwang","I was Born in March 23",77777,8,1));
+        userList.add(new User(8,"najaemin",R.drawable.iv_jaemin,"NA JAEMIN","i have 3 cats and 6 brothers",88888,8,1));
+
+    }
+
+    private static void initFeedPosts() {
+        if (userList.size() < 9) {
+            Log.e("DataSource", "Error: userList has " + userList.size() + " items");
+            return;
+        }
+        feedPostList.add(new Post(1, userList.get(0), R.drawable.post1, "arrietty's fren, i forget his name actually hehe", 20, new Date(System.currentTimeMillis() - TimeUnit.HOURS.toMillis(17))));
+        feedPostList.add(new Post(2, userList.get(1), R.drawable.post2, "cilukba", 85, new Date(System.currentTimeMillis() - TimeUnit.MINUTES.toMillis(1))));
+        feedPostList.add(new Post(3, userList.get(2), R.drawable.post3, "boy friend of ponyo", 120, new Date(System.currentTimeMillis() - TimeUnit.HOURS.toMillis(2))));
+        feedPostList.add(new Post(4, userList.get(3), R.drawable.post4, "5555", 9, new Date(System.currentTimeMillis() - TimeUnit.MINUTES.toMillis(4))));
+        feedPostList.add(new Post(5, userList.get(4), R.drawable.post5, "heleee", 815, new Date(System.currentTimeMillis() - TimeUnit.HOURS.toMillis(1))));
+        feedPostList.add(new Post(6, userList.get(5), R.drawable.post6, "jeb..ajeb-ajeb", 23, new Date(System.currentTimeMillis() - TimeUnit.DAYS.toMillis(23))));
+        feedPostList.add(new Post(7, userList.get(6), R.drawable.post7, "tertawalah", 24, new Date(System.currentTimeMillis() - TimeUnit.HOURS.toMillis(20))));
+        feedPostList.add(new Post(8, userList.get(7), R.drawable.post8, "lastbutnotleasthijauuuuxilau", 400, new Date(System.currentTimeMillis() - TimeUnit.DAYS.toMillis(1))));
+    }
+
+    private static void initProfilePosts() {
+        profilePostList.add(new Post(111, currentUser, R.drawable.post_feed1, "hola", 350, new Date(System.currentTimeMillis() - TimeUnit.HOURS.toMillis(20))));
+        profilePostList.add(new Post(112, currentUser, R.drawable.post_feed2, "huge cap", 280, new Date(System.currentTimeMillis() - TimeUnit.DAYS.toMillis(5))));
+        profilePostList.add(new Post(113, currentUser, R.drawable.post_feed3, "hola", 3250, new Date(System.currentTimeMillis() - TimeUnit.MINUTES.toMillis(3))));
+        profilePostList.add(new Post(114, currentUser, R.drawable.post_feed4, "huge cap", 290, new Date(System.currentTimeMillis() - TimeUnit.DAYS.toMillis(5))));
+        profilePostList.add(new Post(115, currentUser, R.drawable.post_feed5, "country roads~~~~", 390, new Date(System.currentTimeMillis() - TimeUnit.DAYS.toMillis(2))));
+        profilePostList.add(new Post(116, currentUser, R.drawable.post_feed6, "buat buku nieh", 980, new Date(System.currentTimeMillis() - TimeUnit.MINUTES.toMillis(5))));
+        profilePostList.add(new Post(117, currentUser, R.drawable.post_feed7, "hola", 2750, new Date(System.currentTimeMillis() - TimeUnit.DAYS.toMillis(2))));
+        profilePostList.add(new Post(118, currentUser, R.drawable.post_feed8, "huge cap", 380, new Date(System.currentTimeMillis() - TimeUnit.HOURS.toMillis(5))));
+        profilePostList.add(new Post(119, currentUser, R.drawable.post_feed9,"lastbutnotleast", 1250, new Date(System.currentTimeMillis() - TimeUnit.DAYS.toMillis(2))));
+        currentUser.setPostsCount(profilePostList.size());
+    }
+
+    private static void initStories() {
+        storyList.add(new Story(1, "krunyil", R.drawable.storythumbnile1, R.drawable.story_post1, new Date(System.currentTimeMillis() - TimeUnit.DAYS.toMillis(30))));
+        storyList.add(new Story(1, "chilldream", R.drawable.storythumbnile2, R.drawable.story_post2, new Date(System.currentTimeMillis() - TimeUnit.DAYS.toMillis(30))));
+    }
+
+    public static List<User> getUserList() {
+        return userList;
+    }
+    public static List<Post> getFeedPostList() {
+        return feedPostList;
+    }
+    public static List<Post> getProfilePostList() {
+        return profilePostList;
+    }
+    public static List<Story> getStoryList() {
+        return storyList;
+    }
+    public static User getCurrentUser() {
+        return currentUser;
+    }
+
+    public static void addPost(Post post) {
+        profilePostList.add(0, post);
+        currentUser.setPostsCount(profilePostList.size());
+    }
+
+    public static List<Post> getPostsByUser(User user) {
+        List<Post> result = new ArrayList<>();
+        for (Post post : feedPostList) {
+            if (post.getUser().getId() == user.getId()) {
+                result.add(post);
+            }
+        }
+
+        if (user.getId() == currentUser.getId()) {
+            result.addAll(profilePostList);
+        }
+
+        return result;
+    }
+}
+package com.example.instagram03.activities;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.widget.ImageView;
+
+import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.instagram03.R;
+import com.example.instagram03.adapters.FeedAdapter;
+import com.example.instagram03.utils.DataSource;
+
+public class MainActivity extends AppCompatActivity {
+
+    private RecyclerView recyclerViewFeed;
+//    private FeedAdapter feedAdapter;
+    private ImageView ic_home, ic_post, ic_profile;
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        EdgeToEdge.enable(this);
+        setContentView(R.layout.activity_main);
+
+        recyclerViewFeed = findViewById(R.id.recyclerViewFeed);
+        ic_home = findViewById(R.id.ic_home);
+        ic_post= findViewById(R.id.ic_post);
+        ic_profile = findViewById(R.id.ic_profile);
+
+        recyclerViewFeed.setLayoutManager(new LinearLayoutManager(this));// Set layout manager
+
+        FeedAdapter feedAdapter = new FeedAdapter(this, DataSource.getFeedPostList());
+        recyclerViewFeed.setAdapter(feedAdapter);
+
+        ic_home.setOnClickListener(v -> {
+
+        });
+
+        ic_post.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, AddPostActivity.class);
+            startActivity(intent);
+        });
+
+        ic_profile.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
+            startActivity(intent);
+        });
+
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            return insets;
+        });
+    }
+}
