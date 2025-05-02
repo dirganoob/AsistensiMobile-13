@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Instagram Clone</string>
+
+    <!-- Main Activity -->
+    <string name="logo_instagram">Instagram Font</string>
+
+    <!-- Profile Activity -->
+    <string name="profile">Profile</string>
+    <string name="posts">Posts</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="edit_profile">Edit Profile</string>
+
+    <!-- Post Detail Activity -->
+    <string name="post">Post</string>
+    <string name="likes">%d likes</string>
+
+    <!-- Create Post Activity -->
+    <string name="new_post">New Post</string>
+    <string name="share">Share</string>
+    <string name="select_image">Select Image</string>
+    <string name="write_caption">Write a caption...</string>
+    <string name="post_created">Post created successfully!</string>
+    <string name="please_select_image">Please select an image first</string>
+
+    <!-- Bottom Navigation -->
+    <string name="home">Home</string>
+    <string name="add">Add</string>
+</resources>
