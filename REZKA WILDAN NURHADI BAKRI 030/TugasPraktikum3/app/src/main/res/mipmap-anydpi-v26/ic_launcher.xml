@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Latar belakang PNG -->
+    <background android:drawable="@drawable/instagram" />
+    <!-- Gambar Foreground PNG -->
+    <foreground android:drawable="@drawable/instagram" />
+    <!-- Monochrome jika diperlukan, menggunakan PNG -->
+    <monochrome android:drawable="@drawable/instagram" />
+</adaptive-icon>
