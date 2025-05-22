@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Networking</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="CharacterName">Character Name</string>
+    <string name="Species">Species</string>
+    <string name="SpeciesType">Human</string>
+    <string name="Gender">Gender</string>
+    <string name="GenderType">Male</string>
+    <string name="Status">Status</string>
+    <string name="StatusType">Alive</string>
+    <string name="ErrorMessage">Gagal memuat data</string>"
+    <string name="LoadMore">Load More</string>
+</resources>

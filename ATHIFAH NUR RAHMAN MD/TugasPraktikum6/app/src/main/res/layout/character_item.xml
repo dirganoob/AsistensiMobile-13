@@ -1,0 +1,58 @@
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="@color/cardLine"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="8dp"
+    app:strokeWidth="0.5dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:id="@+id/iv_imageCard"
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:background="@drawable/efek_kabut"
+            android:scaleType="centerCrop"
+            android:src="@drawable/background"
+            android:clipToOutline="true"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/efek_kabut" />  <!-- hitam transparan -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/characterName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/CharacterName"
+                android:textColor="@color/line"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/species"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Species"
+                android:textColor="@color/line"
+                android:textSize="14sp"
+                android:textStyle="italic"/>
+        </LinearLayout>
+    </FrameLayout>
+</com.google.android.material.card.MaterialCardView>
