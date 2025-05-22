@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary colors (Rick and Morty theme) -->
+    <color name="primary">#87CEEB</color> <!-- Light blue -->
+    <color name="primary_dark">#5F9EA0</color> <!-- Cadet blue -->
+    <color name="accent">#FFD700</color> <!-- Gold -->
+    <color name="background">#F5F5F5</color> <!-- Light gray -->
+
+    <!-- Status colors -->
+    <color name="status_alive">#4CAF50</color> <!-- Green -->
+    <color name="status_dead">#F44336</color> <!-- Red -->
+    <color name="status_unknown">#9E9E9E</color> <!-- Gray -->
+
+    <!-- Text colors -->
+    <color name="text_primary">#333333</color>
+    <color name="text_secondary">#666666</color>
+    <color name="text_tertiary">#999999</color>
+
+    <!-- Other colors -->
+    <color name="gray">#BDBDBD</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="primary_variant">#FF3700B3</color>
+    <color name="secondary">#FF03DAC5</color>
+    <color name="secondary_variant">#FF018786</color>
+</resources>
