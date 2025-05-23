@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Unhas Library</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_favorites">Favorites</string>
+    <string name="nav_add_book">Add Book</string>
+
+    <!-- Home Fragment -->
+    <string name="search_hint">Search by title or author</string>
+    <string name="filter_by_genre">Filter by genre</string>
+    <string name="all_books">All Books</string>
+    <string name="no_books_found">No books found</string>
+
+    <!-- Favorites Fragment -->
+    <string name="no_favorites">You haven\'t liked any books yet</string>
+    <string name="your_favorites">Your Favorite Books</string>
+
+    <!-- Add Book Fragment -->
+    <string name="add_new_book">Add New Book</string>
+    <string name="book_title">Book Title</string>
+    <string name="book_author">Author</string>
+    <string name="book_year">Publication Year</string>
+    <string name="book_genre">Genre</string>
+    <string name="book_rating">Rating (1-5)</string>
+    <string name="book_blurb">Book Description</string>
+    <string name="select_cover">Select Cover Image</string>
+    <string name="add_book">Add Book</string>
+    <string name="title_required">Title is required</string>
+    <string name="author_required">Author is required</string>
+    <string name="year_required">Publication year is required</string>
+    <string name="blurb_required">Description is required</string>
+    <string name="genre_required">Genre is required</string>
+    <string name="cover_required">Cover image is required</string>
+    <string name="book_added_success">Book added successfully!</string>
+    <string name="book_cover">Book Cover</string>
+
+    <!-- Detail Activity -->
+    <string name="book_details">Book Details</string>
+    <string name="published">Published: %1$d</string>
+    <string name="genre">Genre: %1$s</string>
+    <string name="rating">Rating: %.1f/5.0</string>
+    <string name="reviews">Reviews</string>
+    <string name="no_reviews">No reviews yet</string>
+    <string name="by_author">by %1$s</string>
+    <string name="like">Like</string>
+    <string name="unlike">Unlike</string>
+    <string name="back">Back</string>
+
+    <!-- Other -->
+    <string name="error_loading_image">Error loading image</string>
+    <string name="permission_denied">Permission denied</string>
+</resources>
