@@ -1,0 +1,16 @@
+<resources>
+    <string-array name="genres">
+        <item>Fiction</item>
+        <item>Fantasy</item>
+        <item>Science Fiction</item>
+        <item>Mystery</item>
+        <item>Romance</item>
+        <item>Thriller</item>
+        <item>Horror</item>
+        <item>Biography</item>
+        <item>History</item>
+        <item>Classic</item>
+        <item>Dystopian</item>
+        <item>Young Adult</item>
+    </string-array>
+</resources>
